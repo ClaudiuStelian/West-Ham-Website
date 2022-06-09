@@ -1,0 +1,522 @@
+.button {
+  border: none;  
+  color: rgb(124, 44, 59);
+  padding: 10px 29px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+
+.shadow {
+  box-shadow: 0px 1px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.shadow1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+div.sticky {  
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	
+	}
+div.bar_name{
+	position: absolute;
+	top: 16px;
+	left: 200px;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(124, 44, 59);
+}
+div.login{
+	position: absolute;
+	top:0px;
+	right: 200px;
+	font-size: 18px;
+	
+}
+div.bar_menu { 
+	text-align:center; 
+	background-color: #008CBA; 
+	margin:0px 0px;
+	margin-top:0px;
+	height:50px;
+	background-image:url("Pictures/logo.png");
+	background-repeat:no-repeat;
+	background-size:40px 50px;
+	background-position:650px;
+	border-bottom-style:solid;
+	border-bottom-color: rgb(124, 44, 59);
+	
+	}
+body{ background-color:#008CBA;
+	  background-size:cover;
+	  background-repeat: no-repeat;
+}
+
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  
+}
+
+img {
+  vertical-align: middle;
+  height: 70%;
+  width:100%;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgb(124, 44, 59);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: rgb(124, 44, 59);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: rgb(124, 44, 59);
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 33.33%;
+  height: 18.95%;
+
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+.border1 {
+	border-top:solid;
+	border-top-color:rgb(124, 44, 59);
+	border-bottom:solid;
+	border-bottom-color: rgb(124, 44, 59);
+	height: 30%;
+	margin-top:200px;
+	background-color:white;
+	}
+.border2 {
+	border-top:solid;
+	border-top-color:rgb(124, 44, 59);
+	border-bottom:solid;
+	border-bottom-color: rgb(124, 44, 59);
+	height: 30%;
+	margin-top:0px;
+	background-color:white;
+		
+	}
+
+.title{
+	font-size: 30px;
+	font-family: 'Roboto', sans-serif;
+	color: rgb(124, 44, 59);
+	text-align:center;
+	}
+.textstyle{
+	font-family: 'Grenze Gotisch', cursive;
+	font-size:30px;
+	text-align:center;
+	color: rgb(124, 44, 59);
+}
+.textstyle-left{
+	font-family: 'Grenze Gotisch', cursive;
+	font-size:20px;
+	text-align:left;
+	color: rgb(124, 44, 59);
+}
+
+.p1{
+	  display: block;
+  margin-top: 2em;
+  margin-bottom: 4em;
+}
+.p2{
+	display: block;
+    margin-top: 8em;
+	margin-bottom:8em;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 100%; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.5);
+
+
+}
+* {
+  box-sizing: border-box;
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  height:100%
+
+
+  
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  
+}
+.form-box{
+	width:380px;
+	height:480px;
+	position:relative;
+	margin:6% auto;
+	background:#fff;
+	padding:5px;
+	overflow:hidden;
+}
+.button-box{
+	width:220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow:0 0 10px 3px rgb(124, 44, 59);
+	border-radius:30px;
+}
+.toggle-btn{
+	width:100;
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline:none;
+	position:relative;
+
+	
+	
+}
+
+
+
+#btn{
+	top:0;
+	left:0;
+	position:absolute;
+	width:110px;
+	height:100%;
+	background: linear-gradient(to right, rgb(124, 44, 59), rgb(124, 44, 59));
+	border-radius:30px;
+	transition:.5s;
+}
+.input-group{
+	top:180px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field{
+	width:100%;
+	padding: 10px 0;
+	margin:5px o;
+	border-left:0;
+	BORDER-RIGHT:0;
+	border-top:0;
+	border-bottom:1px solid #999;
+	outline:none;
+	background:transparent;
+	}
+.submit-btn{
+	width:100px;
+	padding:10px 30px;
+	cursor:pointer;
+	display:block;
+	margin:auto;
+	background:linear-gradient(to right, rgb(124, 44, 59), rgb(124, 44, 59));
+	border:0;
+	outline:none;
+	border-radius:30px;
+}
+
+.check-box{
+	margin:30px 10px 30px ;
+	
+}
+span{
+	color:#777;
+font-size:12px;
+bottom:68px;
+position:absolute;
+	
+}
+
+#login{
+	left:50px
+	
+}
+#register{
+	left:450px
+	
+}
+.button2 {background-color: #008CBA;} 
+
+.message{
+	font-family: 'Grenze Gotisch', cursive;
+	font-size:30px;
+	text-align:center;
+	color: rgb(124, 44, 59);
+	
+}
+
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #008CBA;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:rgb(124, 44, 59);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dropdown-content a:hover {background-color: #007ba3;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+.data-box{
+	width:215px;
+	transform: translate(400%,5%);
+	color: rgb(124, 44, 59);
+	font-family: 'Roboto', sans-serif;
+	text-align:left;
+}
+.textbox{
+	overflow: hidden;
+	font-size:20px;
+	padding:8px 0;
+	margin:8px 0;
+	border-bottom: 1px solid rgb(124, 44, 59);
+	margin-bottom:10px;
+	
+}
+.textbox input{
+	border:none;
+	outline:none;
+	background: none;
+}
+.data-box1{
+	width:200px;
+	padding:10px 20%;
+	color: rgb(124, 44, 59);
+	font-family: 'Roboto', sans-serif;
+	text-align:left;
+	
+}
+.databox{
+	width:200px;
+	padding:0px 35%;
+	color: rgb(124, 44, 59);
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+	border: 1px solid rgb(124, 44, 59);
+
+}
+.databox th{
+	border-bottom: 1px solid rgb(124, 44, 59);
+	padding:0px 70px ;
+	
+}
+.databox3 {
+	border-left: 1px solid rgb(124, 44, 59);
+
+}
+.selecttab{
+	background:none;
+	padding:2px 58px;
+	width: 215px;
+	
+}
+.buttonn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 1px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  
+  
+}
+.buttonedit {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.buttonedit:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.buttondelete {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.buttondelete:hover {
+  background-color: #f44336;
+  color: white;
+}
+.inline{
+	padding:0px 57px;
+	
+}
+.coursebox{
+	margin-left: 39.2%;
+	color: rgb(124, 44, 59);
+	font-family: 'Roboto', sans-serif;
+	font-size:20px;
+}
+.modulebox{
+	width:215px;
+	margin-left: 9px;
+}
+.submitbtn{
+	width:200px;
+	padding:10px 30px;
+	cursor:pointer;
+	display:block;
+	margin:20px 80px;
+	background:linear-gradient(to right, rgb(124, 44, 59), rgb(124, 44, 59));
+	border:0;
+	outline:none;
+	border-radius:30px;
+
+}
+.details{
+	text-align: center;
+}
+.databoxx{
+	width:200px;
+	padding:0px 35%;
+	color: rgb(124, 44, 59);
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+	border: 1px solid rgb(124, 44, 59);
+	margin-left: 370px;
+}
+.databoxx th{
+	border-bottom: 1px solid rgb(124, 44, 59);
+	padding:0px 70px ;
+	
+}
+.selecttabb{
+	text-align: center;
+}

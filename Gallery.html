@@ -1,0 +1,88 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css"/>
+<title>West Ham United University</title>
+</head>
+<body>
+
+<div class="sticky">
+<div class="bar_name"><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">West Ham United University</div>
+<div class="bar_menu">
+<a href="Home.html"><button class="button shadow1 button2">Home</button></a>
+<a href="About.html"><button class="button shadow1 button2">About Us</button></a>
+<a href="Gallery.html"><button class="button shadow button2">Gallery</button></a>
+<a href="Contact.html"><button class="button shadow1 button2">Contact Us</button><a>
+</div>
+<div class="login">
+<a href="Register.php"><button class="button shadow1 button2">Login/Register</button></a>
+</div>
+</div>
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="Pictures/p1.jpg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Pictures/p2.jpeg">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="Pictures/p3.jpg">
+  </div>
+
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    
+      <img class="demo column cursor" src="Pictures/p1.jpg"  onclick="currentSlide(1)" alt="West Ham United Team">
+      <img class="demo column cursor" src="Pictures/p2.jpeg"  onclick="currentSlide(2)" alt="West Ham United Students">
+	  <img class="demo column cursor" src="Pictures/p3.jpg"  onclick="currentSlide(3)" alt="West Ham United Stadium ">
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+
+
+
+</body>
+</html> 
